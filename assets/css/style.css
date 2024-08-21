@@ -790,7 +790,9 @@ footer {
   background-image: url();
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover; 
+  background: linear-gradient(black, white);
+}
 
 .blog-content-bckg {
   margin: 0 auto;
@@ -802,7 +804,7 @@ footer {
       padding: 40px 0; } }
 
 .blog-content-inner {
-  background-color: #ffffff;
+  background-color: white;
   /* background-color: #009d80; */
   padding: 70px;
   border-radius: 15px; }
