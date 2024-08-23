@@ -16,13 +16,15 @@
 
     <link rel="stylesheet" href="styles.css">
 
+
     <!-- Estilos CSS index -->
     <link rel="stylesheet" href="index.css">
 
-  <title>FFT Open House 2024</title>
+  <title>FFT México OpenHouse 2024</title>
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-md  fixed-top maine-menu">
     <div class="container">
       <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
@@ -44,9 +46,31 @@
     <div class="card"> <video class="card-img" src="./assets/videos/bgVideo.mp4" type="video/mp4" alt="" autoplay muted loop> </video>
       <div class="card-img-overlay">
         <div class="center-text">
+          
           <h2 class="card-title">Open House 2024 - Bienvenidos Clientes</h2>
           
-          <!-- <a href="#" class="btn">
+          
+
+          <h3 class="card-title">Nuestro evento comienza en:</h3>
+
+          <div class="campaign-timer">
+            <div id="timer">
+              <div class="time time-after" id="days">
+                <span></span>
+              </div><!--/.time-->
+              <div class="time time-after" id="hours">
+
+              </div><!--/.time-->
+              <div class="time time-after" id="minutes">
+
+              </div><!--/.time-->
+              <div class="time" id="seconds">
+
+              </div><!--/.time-->
+            </div><!--/.timer-->
+          </div><!--/.campaign-timer-->
+
+          <a href="#" class="btn">
             <svg width="201" height="51" viewBox="0 0 201 51">
               <defs>
                 <style>
@@ -57,13 +81,15 @@
                 }
               </style>
               <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#e90e65"/>
+                <stop offset="0" stop-color="#009D80"/>
                 <stop offset="1" stop-color="#fff"/>
               </linearGradient>
             </defs>
             <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
           </svg>
-          Explore</a>  -->
+          Registrate ahora
+          </a>
+
         </div>
       </div>
     </div>
@@ -72,6 +98,7 @@
 
   <!-- Blog content section -->
   <section class="fh5co-blog-content">
+    
     <div class="blog-content-bckg">
       <div class="blog-content-inner">
         
@@ -188,9 +215,6 @@
       </div>
     </div>
 
-    
-
-
   </section>
   <!-- Blog content section end -->
 
@@ -229,6 +253,7 @@
   <script src="assets/js/owl.carousel.min.js"></script> 
   <script src="assets/js/main.js"></script>
   <script src="./assets2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
 
 </body>
 </html>
