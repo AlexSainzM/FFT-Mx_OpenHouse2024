@@ -129,7 +129,7 @@ h2 {
       font-size: 30px;
       max-width: 460px; }
     .fh5co-home-banner .center-text {
-      top: 30%; } }
+      top: 20%; } }
   @media (max-width: 700px) {
     .fh5co-home-banner a {
       width: 140px;
@@ -145,7 +145,7 @@ h2 {
       font-size: 18px;
       max-width: 260px; }
     .fh5co-home-banner .center-text {
-      top: 30%; } }
+      top: 1%; } }
 
 .fh5co-two-img .card-img-overlay {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), black);
@@ -800,11 +800,15 @@ footer {
   background: linear-gradient(black, white);
 }
 
+.text-muted {
+  color: #d0d0d0;
+}
+
 .blog-content-bckg {
   margin: 0 auto;
   padding: 70px 0;
   width: 80%;
-  color: #fff; }
+  color: #575756; }
   @media (max-width: 992px) {
     .blog-content-bckg {
       padding: 40px 0; } }
