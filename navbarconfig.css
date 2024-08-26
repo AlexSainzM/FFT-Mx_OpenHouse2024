@@ -2,7 +2,7 @@
     position: absolute;
     top: 20px; }
     .maine-menu .navbar-nav li .nav-link {
-      /*font-family: "PT-Sans-Bold"*/;
+      /*font-family: "PT-Sans-Bold"*/
       font-size: 16px;
       text-transform: uppercase;
       padding: 15px 25px;
@@ -29,10 +29,24 @@
       .maine-menu .navbar-nav {
         float: right; }
         .maine-menu .navbar-nav li .nav-link {
-          /*font-family: "PT-Sans-Bold"*/;
+          /*font-family: "PT-Sans-Bold"*/
           font-size: 16px;
           text-transform: uppercase;
           padding: 7px 10px;
           color: #fff; }
       .maine-menu .collapse.show {
         background: rgba(0, 0, 0, 0.5); } }
+
+
+
+
+
+
+
+
+
+
+
+.tituloQueEncontraras{
+    
+}
