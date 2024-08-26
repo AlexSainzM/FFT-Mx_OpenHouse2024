@@ -10,7 +10,7 @@
 
 /* Colors */
 /* fonts variable */
-@font-face {
+/* @font-face {
   font-family: "Oswald-Bold";
   src: url(../fonts/Oswald-Bold.ttf); }
 
@@ -24,14 +24,14 @@
 
 @font-face {
   font-family: "PT-Sans-Italic";
-  src: url(../fonts/PT_Sans-Web-Italic.ttf); }
+  src: url(../fonts/PT_Sans-Web-Italic.ttf); } */
 
 body {
   font-size: 16px;
-  font-family: "PT-Sans-Regular"; }
+  /*font-family: "PT-Sans-Regular";*/ }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT-Sans-Bold"; }
+  /*font-family: "PT-Sans-Bold";*/ }
 
 h2 {
   font-size: 25px;
@@ -44,7 +44,7 @@ h2 {
   position: absolute;
   top: 20px; }
   .maine-menu .navbar-nav li .nav-link {
-    font-family: "PT-Sans-Bold";
+    /*font-family: "PT-Sans-Bold";*/
     font-size: 16px;
     text-transform: uppercase;
     padding: 15px 25px;
@@ -71,7 +71,7 @@ h2 {
     .maine-menu .navbar-nav {
       float: right; }
       .maine-menu .navbar-nav li .nav-link {
-        font-family: "PT-Sans-Bold";
+        /*font-family: "PT-Sans-Bold";*/
         font-size: 16px;
         text-transform: uppercase;
         padding: 7px 10px;
@@ -87,7 +87,8 @@ h2 {
     border-radius: 0; }
 
 .fh5co-home-banner {
-  padding: 0; }
+  padding: 0;
+  background-color: #000; }
   .fh5co-home-banner .card {
     border: none; }
   .fh5co-home-banner h2 {
@@ -179,7 +180,7 @@ h2 {
     .contact-pop .content h4 {
       color: #978b91;
       font-size: 18px;
-      font-family: "PT-Sans-Regular"; }
+      /*font-family: "PT-Sans-Regular"; */}
     .contact-pop .content p {
       color: #584f53; }
     .contact-pop .content hr {
@@ -599,7 +600,7 @@ h2 {
       top: 43px;
       opacity: 0.5; }
       .fh5co-about-me .carousel-indicators li span {
-        font-family: "PT-Sans-Bold";
+        /*font-family: "PT-Sans-Bold";*/
         font-size: 18px;
         text-align: center;
         margin-top: 20px;
