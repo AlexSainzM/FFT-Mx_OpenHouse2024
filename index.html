@@ -239,43 +239,44 @@
           <textarea class="form-control" placeholder="Compañía"></textarea> -->
           
           
-          <form class="needs-validation" novalidate>
+          <form class="needs-validation" action="https://formspree.io/f/mwkgzebo"
+          method="POST" novalidate>
             <div class="row g-3">
               <div class="col-sm-6">
-                <label for="firstName" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Tú nombre" value="" required>
+                <label for="nombreInvitado" class="form-label">Nombre(s):</label>
+                <input type="text" class="form-control" id="nombreInvitado" name="nombreInvitado" placeholder="Tú nombre" value="" required>
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
 
               <div class="col-sm-6">
-                <label for="lastName" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Tus apellidos" value="" required>
+                <label for="apellidosInvitado" class="form-label">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidosInvitado" name="apellidosInvitado" placeholder="Tus apellidos" value="" required>
                 <div class="invalid-feedback">
                   Valid last name is required.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="contact-email" class="form-label">E-mail de contacto</label>
-                <input type="email" class="form-control" id="contact-email" placeholder="ejemplo@correo.com" required>
+                <label for="contact-email" class="form-label">E-mail de contacto:</label>
+                <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="ejemplo@correo.com" required>
                 <div class="invalid-feedback">
                   Your username is required.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="contact-tel" class="form-label">Teléfono de contacto<span class="text-muted"> (Opcional)</span></label>
-                <input type="tel" class="form-control" id="contact-tel" placeholder="+52 222 222222">
+                <label for="contact-tel" class="form-label">Teléfono de contacto:<span class="text-muted"> (Opcional)</span></label>
+                <input type="tel" class="form-control" id="contact-tel" name="contact-tel" placeholder="+52 222 222222">
                 <div class="invalid-feedback">
                   Please enter a valid email address for shipping updates.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="empresa" class="form-label">Empresa</label>
-                <input type="text" class="form-control" id="empresa" placeholder="Tu empresa" required>
+                <label for="empresaInvitado" class="form-label">Empresa:</label>
+                <input type="text" class="form-control" id="empresaInvitado" name="empresaInvitado" placeholder="Tu empresa" required>
                 <div class="invalid-feedback">
                   Please enter your shipping address.
                 </div>
@@ -324,23 +325,23 @@
 
             <div class="my-3">
               <div class="form-check">
-                <input id="ninguno" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="ninguno">Sin acompañantes</label>
+                <input id="sinAcompanante" name="acompanantesCliente" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="sinAcompanante">Sin acompañantes</label>
               </div>
               <div class="form-check">
-                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="debit">Me acompaña una persona</label>
+                <input id="unAcompanante" name="acompanantesCliente" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="unAcompanante">Me acompaña una persona</label>
               </div>
               <div class="form-check">
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="paypal">Me acompañan dos personas</label>
+                <input id="dosAcompanantes" name="acompanantesCliente" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="dosAcompanantes">Me acompañan dos personas</label>
               </div>              
             </div>
 
             <div class="row gy-3">
               <div class="col-md-12">
                 <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
-                <input type="text" class="form-control" id="nombreAcompañante1" placeholder="Nombre completo" required>
+                <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
                 <div class="invalid-feedback">
                   Name is required
                 </div>
@@ -348,7 +349,7 @@
 
               <div class="col-md-12">
                 <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
-                <input type="text" class="form-control" id="nombreAcompañante2" placeholder="Nombre completo" required>
+                <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
                 <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
                 <div class="invalid-feedback">
                   Name is required
@@ -378,14 +379,14 @@
 
 
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="reqEspeciales">
-              <label class="form-check-label" for="reqEspeciales">¿Tu o alguno de tus acompañantes tienen algún requerimiento especial? <span class="text-muted">(Especificar)</span></label>
+              <input type="checkbox" class="form-check-input" id="requerimientosEspeciales" name="requerimientosEspeciales">
+              <label class="form-check-label" for="requerimientosEspeciales">¿Tu o alguno de tus acompañantes tienen algún requerimiento especial? <span class="text-muted">(Especificar)</span></label>
             </div>
 
             <div class="row gy-3">
               <div class="col-md-12">
-                <label for="nombreAcompañante1" class="form-label"></label>
-                <input type="text" class="form-control" id="nombreAcompañante1" placeholder="Discapacidad, alergias, etc..." required>
+                <label for="requerimientosEspecialesEspec" class="form-label"></label>
+                <input type="text" class="form-control" id="requerimientosEspecialesEspec" name="requerimientosEspecialesEspec" placeholder="Discapacidad, alergias, etc..." required>
                 <div class="invalid-feedback">
                   Name is required
                 </div>
@@ -397,9 +398,16 @@
             <hr class="my-4">
 
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="reqEspeciales">
-              <label class="form-check-label" for="reqEspeciales">¿Llegarás en un vehiculo particular?</label>
+              <input type="checkbox" class="form-check-input" id="confirmaAsistencia" name="confirmaAsistencia">
+              <label class="form-check-label" for="confirmaAsistencia">Confimmo mi asistencia al evento. </label>
             </div>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="vehiculoParticular" name="vehiculoParticular">
+              <label class="form-check-label" for="vehiculoParticular">Llevaré un vehículo particular</label>
+            </div>
+
+
             
             <hr class="my-4">
 
