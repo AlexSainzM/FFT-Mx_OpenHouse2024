@@ -103,7 +103,16 @@ h2 {
     color: #fff;
     opacity: 50%;
     max-width: 730px;
-    margin: 10px auto; }
+    margin: 10px auto;
+   }
+
+  @media (max-width: 600px) {
+    .fh5co-home-banner h3 {
+      font-size: 18px;
+      
+    }
+  }
+
   .fh5co-home-banner a {
     color: #fff;
     width: 198px;
@@ -141,7 +150,7 @@ h2 {
         width: 140px; } }
   @media (max-width: 600px) {
     .fh5co-home-banner a {
-      margin-top: 20px; }
+      margin-top: 8px; }
     .fh5co-home-banner h2 {
       font-size: 18px;
       max-width: 260px; }
