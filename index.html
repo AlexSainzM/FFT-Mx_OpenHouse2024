@@ -20,7 +20,7 @@
     <!-- Estilos CSS index -->
     <link rel="stylesheet" href="index.css">
   <link href="./assets2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="navbarconfig.css">
 
   <title>FFT México OpenHouse 2024</title>
@@ -40,7 +40,8 @@
           <li class="nav-item"> <a class="nav-link" href="index.html#activity" tabindex="-1" aria-disabled="true">Activity</a></li>
           <li class="nav-item"> <a class="nav-link" href="index.html#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a></li>
           <li class="nav-item"> <a class="nav-link" href="index.html#testimonial" tabindex="-1" aria-disabled="true">Testimonial</a></li> -->
-          <li class="nav-item"> <a class="nav-link" href="#content" tabindex="-1" aria-disabled="true">Conoce más detalles</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#content" tabindex="-1" aria-disabled="true">Ver agenda</a></li>
+
           <li class="nav-item"> <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Registrate</a></li>
         </ul>
       </div>
@@ -121,91 +122,20 @@
           <!-- FINAL RUSUMEN DEL EVENTO -->
 
           <hr class="featurette-divider" style="color: #fff;">
-          
-          <hr class="featurette-divider">
-
-          
-          <div class="row g-5">
-            <div class="col-md-6">
-              <h2 style="color: #009D80;">Descubre los productos y servicios de FFT</h2>
-              <p>Duarante este evento tendrás la oportunidad de: </p>
-              <ul class="icon-list">
-                <li>Conocer de primera mano nuestra visión para FFT en los próximos años.</li>
-                <li>Realizar un recorrido guiado por nuestras instalaciones y showroom.</li>
-                <li>Participar en presentaciones exclusivas sobre las últimas innovaciones en automatización.</li>
-                <li>Disfrutar de espacios de networking y compartir ideas en un ambiente colaborativo.</li>
-                <li>Participar en dinámicas interactivas diseñadas para inspirar la creatividad y colaboración.</li>
-                <li>Disfrutar de una selección de bebidas y snack durante los espacios de descanso y networking.</li>
-                <li>Asistir a una comida en tu honor donde podrás conectar más a fondo con otros asistentes y expertos de la industria.</li>
-              </ul>
-            </div>
-      
-            <div class="col-md-6">
-              <h2 style="color: #009D80;">Agenda del evento</h2>
-              <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-              <ul class="">
-                <li><span style="color: #009D80;">9:00 am Recepción. </span>FFT te recibe con una calida bienvenida</li>
-                <li><span style="color: #009D80;">9:20 am Presentación bienvenida. </span>Visión FFT 2030</li>
-                <li><span style="color: #009D80;">10:00 am Tour guiado. </span>Acompañanos a un Tour dentro de las instalaciones de FFT y conoce nuestro Showroom</li>
-                <li><span style="color: #009D80;">11:30 am Lunch break </span>Bebidas, snacks & networking</li>
-                <li><span style="color: #009D80;">12:15 am Presentación 2: </span>Nuevas soluciones en automatización</li>
-                <li><span style="color: #009D80;">1:15 pm Break refrescante. </span>Tomaremos un breve descanso antes de partir a nuestra comida</li>
-                <li><span style="color: #009D80;">1:30 pm Traslado a Hotel. </span>Nuestro transporte estara esperandolos para llevarlos hasta la locacion de nuestra comida en su honor</li>
-                <li><span style="color: #009D80;">2:00 pm Recepción. </span></li>                
-                <li><span style="color: #009D80;">3:30 pm Presentación 3: </span>Tema tbd</li>
-                <li><span style="color: #009D80;">8:00 pm Cierre del evento. </span>Agradecimientos finales, fotografía grupal, últimas conexiones</li>
-                
-              </ul>
-            </div>
-          </div>
-          
-          <hr class="featurette-divider">
-          
-          <h2 class="featurette-heading text-center display-6" style="color: #009D80;"><span class="" style="color: #009D80;">Speakers and Topics</span></h2> 
-
           <hr class="featurette-divider" style="color: #fff;">
+          
 
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading" style="color: #009D80;">9:20 am <span class="" style="color: #009D80;">Visión FFT 2030</span></h2>
-              <p class="lead" style="color: #009D80;">Horador: Enrico Stölzner</p>
-              <p class="lead">Conoce hacia dónde nos dirigimos. En esta presentación, [Nombre del Orador], Director General de FFT, compartirá la estrategia y visión a largo plazo de FFT. Descubre cómo nos estamos preparando para enfrentar los desafíos del futuro, impulsando la innovación y la sostenibilidad en cada área de nuestra operación. Este es el primer paso hacia la transformación que liderará la industria en la próxima década.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          
+          <div class="row g-2">
 
-            </div>
+
+            <button type="button" class="btn btn-primary" style="background-color:#009D80; border-color: #009D80; font-size: larger;" data-bs-toggle="modal" data-bs-target="#modalAgenda">
+              Ver detalle de la agenda
+            </button>
+      
+            
           </div>
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">12:30 pm <span class="" style="color: #009D80;">Nuevas Soluciones en Automatizacion</span></h2>
-              <p class="lead">Horador: to be defined</p>
-              <p class="lead">Innovación al servicio de la eficiencia. Únete a [Nombre del Orador], Jefe de Innovación en FFT, en una exploración de nuestras últimas soluciones en automatización. Descubre cómo nuestras innovaciones están diseñadas para optimizar procesos, reducir costos y aumentar la productividad. Esta presentación te ofrecerá una visión clara de las herramientas que están transformando la manera en que operamos y cómo puedes aprovecharlas para llevar tu negocio al siguiente nivel.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
-
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading" style="color: #009D80;">3:30 pm <span class="text-muted">Tecnología y Sustentabilidad: Caminos Hacia el Futuro</span></h2>
-              <p class="lead" style="color: #009D80;">Horador: to be defined</p>
-              <p class="lead">Fusionando innovación y responsabilidad. En esta presentación, [Nombre del Orador], Gerente de Desarrollo Sostenible en FFT, nos guiará a través de las estrategias tecnológicas que estamos implementando para un futuro más verde y eficiente. Descubre cómo FFT está integrando prácticas sustentables en cada fase de sus procesos, combinando tecnología avanzada con un compromiso profundo con el medio ambiente. Prepárate para explorar el futuro de la industria, donde la innovación y la sustentabilidad van de la mano.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-          </div>
-
-          <hr class="featurette-divider">
+        
 
         </div>
         <!-- FINAL CARACTERISTICAS DEL EVENTO -->
@@ -217,8 +147,48 @@
   </section>
   <!-- Blog content section end -->
 
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalAgenda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agenda del evento</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <div class="modal-body">
+        <div class="col-md-12">
+          <h2 style="color: #009D80;">Agenda del evento</h2>
+          <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+          <ul class="">
+            <li><span style="color: #009D80;">9:00 am Recepción. </span>FFT te recibe con una calida bienvenida</li>
+            <li><span style="color: #009D80;">9:20 am Presentación bienvenida. </span>Visión FFT 2030</li>
+            <li><span style="color: #009D80;">10:00 am Tour guiado. </span>Acompañanos a un Tour dentro de las instalaciones de FFT y conoce nuestro Showroom</li>
+            <li><span style="color: #009D80;">11:30 am Lunch break </span>Bebidas, snacks & networking</li>
+            <li><span style="color: #009D80;">12:15 am Presentación 2: </span>Nuevas soluciones en automatización</li>
+            <li><span style="color: #009D80;">1:15 pm Break refrescante. </span>Tomaremos un breve descanso antes de partir a nuestra comida</li>
+            <li><span style="color: #009D80;">1:30 pm Traslado a Hotel. </span>Nuestro transporte estara esperandolos para llevarlos hasta la locacion de nuestra comida en su honor</li>
+            <li><span style="color: #009D80;">2:00 pm Recepción. </span></li>                
+            <li><span style="color: #009D80;">3:30 pm Presentación 3: </span>Tema tbd</li>
+            <li><span style="color: #009D80;">8:00 pm Cierre del evento. </span>Agradecimientos finales, fotografía grupal, últimas conexiones</li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
   <footer class="container-fluid p-0 pr-0">
+    
     <div class="row mr-0 ml-0">
 
       <div class="col-md-6 pr-0 pl-0 map">
@@ -242,6 +212,7 @@
           
           <form class="needs-validation" action="https://formspree.io/f/mwkgzebo"
           method="POST" novalidate>
+
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="nombreInvitado" class="form-label">Nombre(s):</label>
@@ -260,8 +231,8 @@
               </div>
 
               <div class="col-12">
-                <label for="contact-email" class="form-label">E-mail de contacto:</label>
-                <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="ejemplo@correo.com" required>
+                <label for="email" class="form-label">E-mail de contacto:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
                 <div class="invalid-feedback">
                   Your username is required.
                 </div>
@@ -322,60 +293,187 @@
             <hr class="my-4">
 
             <h4 class="mb-3">¿Vienes con acompañantes?</h4>
-            <p class="" style="color: #009D80;">Puedes asistir hasta con dos acompañantes</p>
+            <p class="" style="color: #009D80;">Puedes asistir hasta con 5 acompañantes</p>
 
             <div class="my-3">
-              <div class="form-check">
-                <input id="sinAcompanante" name="acompanantesCliente" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="sinAcompanante">Sin acompañantes</label>
-              </div>
-              <div class="form-check">
-                <input id="unAcompanante" name="acompanantesCliente" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="unAcompanante">Me acompaña una persona</label>
-              </div>
-              <div class="form-check">
-                <input id="dosAcompanantes" name="acompanantesCliente" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="dosAcompanantes">Me acompañan dos personas</label>
-              </div>              
-            </div>
 
-            <div class="row gy-3">
-              <div class="col-md-12">
-                <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
-                <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
-                <div class="invalid-feedback">
-                  Name is required
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
-                <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
-                <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
-                <div class="invalid-feedback">
-                  Name is required
-                </div>
-              </div>
-
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item col-2" role="presentation">
+                  <button class="nav-link active botonConteo" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-no" type="button" role="tab" aria-controls="pills-no" aria-selected="true">No</button>
+                </li>
+                <li class="nav-item col-2" role="presentation">
+                  <button class="nav-link botonConteo" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-uno" type="button" role="tab" aria-controls="pills-uno" aria-selected="false">1</button>
+                </li>
+                <li class="nav-item col-2" role="presentation">
+                  <button class="nav-link botonConteo" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-dos" type="button" role="tab" aria-controls="pills-dos" aria-selected="false">2</button>
+                </li>
+                <li class="nav-item col-2" role="presentation">
+                  <button class="nav-link botonConteo" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-tres" type="button" role="tab" aria-controls="pills-tres" aria-selected="false">3</button>
+                </li>
+                <li class="nav-item col-2" role="presentation">
+                  <button class="nav-link botonConteo" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-cuatro" type="button" role="tab" aria-controls="pills-cuatro" aria-selected="false">4</button>
+                </li>
+                <li class="nav-item col-2" role="presentation">
+                  <button class="nav-link botonConteo" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-cinco" type="button" role="tab" aria-controls="pills-cinco" aria-selected="false">5</button>
+                </li>
+                
+              </ul>
               
+              <div class="tab-content" id="pills-tabContent">
 
-              <!-- <div class="col-md-3">
-                <label for="cc-expiration" class="form-label">Expiration</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                <div class="invalid-feedback">
-                  Expiration date required
+                <div class="tab-pane fade show active" id="pills-no" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"></div>
+
+                <div class="tab-pane fade" id="pills-uno" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
                 </div>
+
+                <div class="tab-pane fade" id="pills-dos" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+    
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                    <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-tres" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+    
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre tercer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
+                    <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-cuatro" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+    
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre tercer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre cuarto acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante4" name="nombreAcompañante4" placeholder="Nombre completo" required>
+                    <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-cinco" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+    
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre tercer acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre cuarto acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante4" name="nombreAcompañante4" placeholder="Nombre completo" required>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="nombreAcompañante2" class="form-label">Nombre quinto acompañante:</label>
+                    <input type="text" class="form-control" id="nombreAcompañante5" name="nombreAcompañante5" placeholder="Nombre completo" required>
+                    <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
+                    <div class="invalid-feedback">
+                      Name is required
+                    </div>
+                  </div>
+
+                </div>
+                
               </div>
-
-              <div class="col-md-3">
-                <label for="cc-cvv" class="form-label">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                <div class="invalid-feedback">
-                  Security code required
-                </div>
-              </div> -->
+             
             </div>
 
+            
+
+           
             <hr class="my-4">
 
 
@@ -424,9 +522,12 @@
       </div>
 
     </div>
+    
+    
     <div class="copy pt-4 pb-4">
       <p><a href="https://freehtml5.co/" target="_blank"> &copy; 2024 FFT México</a>  &nbsp;  |  &nbsp; Design by <a href="https://freehtml5.co/" target="_blank">ASM</a> &nbsp; | &nbsp;  All rights reserved</p>
     </div>
+
   </footer>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS --> 

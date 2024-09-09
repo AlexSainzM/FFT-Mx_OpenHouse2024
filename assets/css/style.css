@@ -767,14 +767,14 @@ footer {
       width: 140px;
       padding: 13px 0;
       font-size: 15px;
-      color: #fff;
+      color: #000;
       border: none;
       border-radius: 40px;
       margin: 0 auto;
       display: block;
       cursor: pointer; }
       footer .contact-form button:hover, footer .contact-form button:visited {
-        background: #b90b50; }
+        background: #979797; }
   footer .copy {
     background: #282526;
     text-align: center; }

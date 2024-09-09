@@ -40,6 +40,18 @@
 
 
 
+.botonConteo {
+  max-width: 120%;
+}
+@media (max-width: 600px) {
+  .botonConteo {
+    max-width: 180%;
+  }
+}
+
+
+
+
 
 
 
