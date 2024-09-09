@@ -49,6 +49,20 @@
   }
 }
 
+.logoFFT {
+  max-width: 300px;
+}
+
+@media (max-width: 1100px) {
+  .logoFFT {
+    max-width: 150px;
+  }
+}
+@media (max-width: 700px) {
+  .logoFFT {
+    max-width: 80px;
+  }
+}
 
 
 
