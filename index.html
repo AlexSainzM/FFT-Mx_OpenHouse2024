@@ -123,21 +123,24 @@
           <p class="fs-5 col-md-12">Descubre cómo estamos liderando el camino hacia un futuro más eficiente y automatizado. ¡No te pierdas esta oportunidad para conectarte con expertos de la industria y explorar nuevas soluciones diseñadas para transformar tu negocio!</p>
           <!-- FINAL RUSUMEN DEL EVENTO -->
 
-          <hr class="featurette-divider" style="color: #fff;">
-          <hr class="featurette-divider" style="color: #fff;">
+          <!-- <hr class="featurette-divider" style="color: #fff;">
+          <hr class="featurette-divider" style="color: #fff;"> -->
           
 
           
           <div class="row g-2">
 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.72958587172!2d-98.1540007247682!3d19.07562335198432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1c176ba74c5%3A0x95388287db00e343!2sFFT%20M%C3%A9xico%20S.A.%20de%20C.V.!5e0!3m2!1ses-419!2smx!4v1724182404875!5m2!1ses-419!2smx"  style="border:0; width: auto; min-height: 300px;"  allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
 
-            <button type="button" class="btn btn-primary" style="background-color:#009D80; border-color: #009D80; font-size: larger;" data-bs-toggle="modal" data-bs-target="#modalAgenda">
+
+            <!-- <button type="button" class="btn btn-primary" style="background-color:#009D80; border-color: #009D80; font-size: larger;" data-bs-toggle="modal" data-bs-target="#modalAgenda">
               Ver detalle de la agenda
-            </button>
+            </button> -->
       
             
           </div>
-        
+
+          
 
         </div>
         <!-- FINAL CARACTERISTICAS DEL EVENTO -->
@@ -193,30 +196,19 @@
     
     <div class="row mr-0 ml-0">
 
-      <div class="col-md-6 pr-0 pl-0 map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.72958587172!2d-98.1540007247682!3d19.07562335198432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1c176ba74c5%3A0x95388287db00e343!2sFFT%20M%C3%A9xico%20S.A.%20de%20C.V.!5e0!3m2!1ses-419!2smx!4v1724182404875!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      
 
-      <div class="col-md-6 content-us">
+      <div class="col-md-12 content-us">
         
         <div class="contact-form" id="contact">
           
-          <h3 class="text-uppercase">Regístrate</h3>
-          <!--<input type="text" class="form-control" placeholder="Nombre Completo">
-          <input type="text" class="form-control" placeholder="Tú Email">
-          <input type="text" class="form-control" placeholder="Número telefonico">
-          <input type="text" class="form-control" placeholder="Número de acompañantes">
-          <input type="text" class="form-control" placeholder="Nombre completo del primer acompañante">
-          <input type="text" class="form-control" placeholder="Nombre completo del segundo acompañante">
-          <input type="text" class="form-control" placeholder="Requerimientos especiales: Discpacidad, etc.">
-          <textarea class="form-control" placeholder="Compañía"></textarea> -->
-          
-          
+          <p class="text-center display-5" style="color: #009D80;"><span>Regístrate</span></p>
+                   
           <form id="registro" class="needs-validation" action="https://formspree.io/f/xpwaeazw"
           method="POST" novalidate>
 
             <div class="row g-3">
-              <div class="col-sm-6">
+              <div class="col-lg-4">
                 <label for="nombreInvitado" class="form-label">Nombre(s):</label>
                 <input type="text" class="form-control" id="nombreInvitado" name="nombreInvitado" placeholder="Tú nombre" value="" required>
                 <div class="invalid-feedback">
@@ -224,7 +216,7 @@
                 </div>
               </div>
 
-              <div class="col-sm-6">
+              <div class="col-lg-4">
                 <label for="apellidosInvitado" class="form-label">Apellidos:</label>
                 <input type="text" class="form-control" id="apellidosInvitado" name="apellidosInvitado" placeholder="Tus apellidos" value="" required>
                 <div class="invalid-feedback">
@@ -232,7 +224,7 @@
                 </div>
               </div>
 
-              <div class="col-12">
+              <div class="col-12 col-lg-4">
                 <label for="email" class="form-label">E-mail de contacto:</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
                 <div class="invalid-feedback">
@@ -240,7 +232,7 @@
                 </div>
               </div>
 
-              <div class="col-12">
+              <div class="col-12 col-lg-4">
                 <label for="contact-tel" class="form-label">Teléfono de contacto:<span class="text-muted"> (Opcional)</span></label>
                 <input type="tel" class="form-control" id="contact-tel" name="contact-tel" placeholder="+52 222 222222">
                 <div class="invalid-feedback">
@@ -248,7 +240,7 @@
                 </div>
               </div>
 
-              <div class="col-12">
+              <div class="col-12 col-lg-4">
                 <label for="empresaInvitado" class="form-label">Empresa:</label>
                 <input type="text" class="form-control" id="empresaInvitado" name="empresaInvitado" placeholder="Tu empresa" required>
                 <div class="invalid-feedback">
@@ -256,40 +248,14 @@
                 </div>
               </div>
 
-              <!-- <div class="col-12">
-                <label for="address2" class="form-label">Aditional input: <span class="text-muted">(Optional)</span></label>
-                <input type="text" class="form-control" id="address2" placeholder="Ejemplo...">
-              </div> -->
-
-              <!-- <div class="col-md-5">
-                <label for="country" class="form-label">Country</label>
-                <select class="form-select" id="country" required>
-                  <option value="">Choose...</option>
-                  <option>United States</option>
-                </select>
+              <div class="col-12 col-lg-4">
+                <label for="puestoInvitado" class="form-label">Puesto o posición:</label>
+                <input type="text" class="form-control" id="puestoInvitado" name="puestoInvitado" placeholder="Tu posición" required>
                 <div class="invalid-feedback">
-                  Please select a valid country.
+                  Please enter your shipping address.
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <label for="state" class="form-label">State</label>
-                <select class="form-select" id="state" required>
-                  <option value="">Choose...</option>
-                  <option>California</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <label for="zip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required>
-                <div class="invalid-feedback">
-                  Zip code required.
-                </div>
-              </div> -->
             </div>
 
             <hr class="my-4">
@@ -327,11 +293,29 @@
 
                 <div class="tab-pane fade" id="pills-uno" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+                  <div class="row">
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante1" class="form-label">Nombre completo primer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante1" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante1" name="emailAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante1" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante1" name="telAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
                   </div>
 
@@ -339,133 +323,398 @@
 
                 <div class="tab-pane fade" id="pills-dos" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+                  <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante1" class="form-label">Nombre completo primer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
-                  </div>
-    
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
-                    <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
-                    <div class="invalid-feedback">
-                      Name is required
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante1" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante1" name="emailAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante1" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante1" name="telAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante2" class="form-label">Nombre completo segundo acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante2" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante2" name="emailAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante2" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante2" name="telAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
 
                 <div class="tab-pane fade" id="pills-tres" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+                  <div class="row">
+                    
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante1" class="form-label">Nombre completo primer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
-                  </div>
-    
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante1" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante1" name="emailAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
-                  </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante1" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante1" name="telAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre tercer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
-                    <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
-                    <div class="invalid-feedback">
-                      Name is required
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante2" class="form-label">Nombre completo segundo acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante2" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante2" name="emailAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante2" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante2" name="telAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante3" class="form-label">Nombre completo tercer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante3" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante3" name="emailAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante3" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante3" name="telAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
 
                 <div class="tab-pane fade" id="pills-cuatro" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+                  <div class="row">
+                    
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante1" class="form-label">Nombre completo primer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
-                  </div>
-    
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante1" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante1" name="emailAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
-                  </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante1" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante1" name="telAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre tercer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
-                    </div>
-                  </div>
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre cuarto acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante4" name="nombreAcompañante4" placeholder="Nombre completo" required>
-                    <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
-                    <div class="invalid-feedback">
-                      Name is required
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante2" class="form-label">Nombre completo segundo acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante2" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante2" name="emailAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante2" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante2" name="telAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante3" class="form-label">Nombre completo tercer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante3" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante3" name="emailAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante3" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante3" name="telAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante4" class="form-label">Nombre completo cuarto acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante4" name="nombreAcompañante4" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante4" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante4" name="emailAcompañante4" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante4" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante4" name="telAcompañante4" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
 
                 <div class="tab-pane fade" id="pills-cinco" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante1" class="form-label">Nombre primer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+                  <div class="row">
+                    
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante1" class="form-label">Nombre completo primer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante1" name="nombreAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
-                  </div>
-    
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre segundo acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante1" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante1" name="emailAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
                     </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante1" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante1" name="telAcompañante1" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante2" class="form-label">Nombre completo segundo acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante2" name="nombreAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante2" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante2" name="emailAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante2" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante2" name="telAcompañante2" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante3" class="form-label">Nombre completo tercer acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante3" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante3" name="emailAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante3" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante3" name="telAcompañante3" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante4" class="form-label">Nombre completo cuarto acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante4" name="nombreAcompañante4" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante4" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante4" name="emailAcompañante4" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante4" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante4" name="telAcompañante4" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4">
+                      <label for="nombreAcompañante5" class="form-label">Nombre completo quinto acompañante:</label>
+                      <input type="text" class="form-control" id="nombreAcompañante5" name="nombreAcompañante5" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="emailAcompañante5" class="form-label">Correo electrónico:</label>
+                      <input type="text" class="form-control" id="emailAcompañante5" name="emailAcompañante5" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-lg-4">
+                      <label for="telAcompañante5" class="form-label">Teléfono:</label>
+                      <input type="text" class="form-control" id="telAcompañante5" name="telAcompañante5" placeholder="Nombre completo" required>
+                      <div class="invalid-feedback">
+                        Name is required
+                      </div>
+                    </div>
+
                   </div>
 
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre tercer acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante3" name="nombreAcompañante3" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    <label for="nombreAcompañante2" class="form-label">Nombre cuarto acompañante:</label>
-                    <input type="text" class="form-control" id="nombreAcompañante4" name="nombreAcompañante4" placeholder="Nombre completo" required>
-                    <div class="invalid-feedback">
-                      Name is required
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
+                  <!-- <div class="col-md-12">
                     <label for="nombreAcompañante2" class="form-label">Nombre quinto acompañante:</label>
                     <input type="text" class="form-control" id="nombreAcompañante5" name="nombreAcompañante5" placeholder="Nombre completo" required>
                     <small class="text-muted">Nombres completos como se muestran en su identificación oficial</small>
                     <div class="invalid-feedback">
                       Name is required
                     </div>
-                  </div>
+                  </div> -->
 
                 </div>
                 
@@ -508,14 +757,19 @@
               <label class="form-check-label" for="vehiculoParticular">Llevaré un vehículo particular</label>
             </div>
 
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="vehiculoParticular" name="vehiculoParticular">
+              <label class="form-check-label" for="vehiculoParticular">He leido y acepto los <a href="" target="_blank" rel="noopener noreferrer">Terminos y condiciones.</a></label>
+            </div>
+
 
             
             <hr class="my-4">
 
 
             <!-- Button trigger modal -->
-            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Launch static backdrop modal
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="color:#fff; min-width: 200px;">
+              Registrarme ahora
             </button>
 
             <!-- Modal -->

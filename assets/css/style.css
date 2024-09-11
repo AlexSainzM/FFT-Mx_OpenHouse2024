@@ -732,7 +732,7 @@ h2 {
       background: #fff; }
 
 footer {
-  background: #009d80; }
+  background:linear-gradient( #004F40, #009d80); }
   footer iframe {
     height: 100%;
     width: 100%; }
@@ -742,7 +742,7 @@ footer {
     background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 550px;
+    max-width: 1300px;
     margin: 60px auto; }
     footer .contact-form h3 {
       color: #009d80;
@@ -807,7 +807,7 @@ footer {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover; 
-  background: linear-gradient(black, white);
+  background: linear-gradient(black, #004F40);
 }
 
 .text-muted {
@@ -824,7 +824,7 @@ footer {
       padding: 40px 0; } }
 
 .blog-content-inner {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.83);
   
   /* background-color: #009d80; */
   padding: 70px;
