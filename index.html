@@ -764,6 +764,8 @@
             
             <hr class="my-4">
 
+            <input type="text" id="idClienteoProv" name="idClienteoProv" style="display: none;">
+
 
             <!-- Button trigger modal -->
             <button type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="color:#fff; min-width: 200px;">
@@ -832,6 +834,21 @@
   <script>
     document.getElementById('registro').addEventListener('submit', function(event) {
       event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+
+      //Aquí generamos un ID unico para cada usuario
+      // Función para generar una ID única
+      function generarIdUnica() {
+          // Obtener la fecha y hora actual en milisegundos
+          const timestamp = Date.now().toString(36); // Conversión a base 36 para hacerlo más compacto
+          // Generar un número aleatorio
+          const randomNumber = Math.random().toString(36).substring(2, 10); // Recortar la parte decimal
+          // Combinar ambos para crear una ID
+          return `${timestamp}${randomNumber}`;
+      }
+
+      const idClienteoProv = document.getElementById("idClienteoProv");
+      idClienteoProv.value = generarIdUnica();
+
   
       // Aquí enviarías el formulario a Formspree (esto es opcional, puedes usar AJAX si lo prefieres)
       const formData = new FormData(this);
@@ -845,7 +862,7 @@
       }).then(response => {
         if (response.ok) {
           // Datos para el QR: puedes incluir un ID único de registro o el nombre del usuario, por ejemplo
-          const qrData = `Correo: ${formData.get('email')}, Evento: Open House`;
+          const qrData = idClienteoProv.value;
           
           // Generar el QR
           document.getElementById('qrContainer').style.display = 'block';
