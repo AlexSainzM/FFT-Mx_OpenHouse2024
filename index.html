@@ -781,17 +781,36 @@
                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                   </div>
                   <div class="modal-body" id="contenidoPDFRegistro">
-                      <!-- Contenedor para mostrar el código QR -->
-                      <div id="qrContainer" style="display:none;">
-                      <h3>Tu código QR de registro:</h3>
-                      <div id="qrcode"></div>
-                      <button type="button" id="downloadQR">Descargar QR</button>
-                      <button type="button" onclick="descargarPDF()">Descargar como PDF</button>
+                      <!-- Contenedor con lo que se muestra al confirmar el registro -->
+                      <div id="qrContainerBefore">
+                        <h3 style="font-weight: bold;">Estas por generar tu registro</h3>
+                        <h3 style="color: gray;">Te pedimos revises con atención tus respuestas, si estás listo has clic en Registrarme ahora</h3>
+                        
                       </div>
+
+                      <!-- Contenedor para mostrar el código QR -->
+                      <div id="qrContainer" class="row" style="display:none;">
+                      <h3 style="font-weight: bold;">Has generado con exito tu registro:</h3>
+                      <div class="col-6 offset-2 col-sm-6 offset-sm-3" id="qrcode"></div>
+                      <h3 style="color: gray;" id="valorRegistroDOM">5s4s61a6xc1a6d1a</h3>
+                      
+                      <h3 style="font-weight: bold; color: gray;">Toma un screenshot de esta pantalla o pulsa el botón descargar PDF para descargar tu confirmación.</h3>
+                      
+                      <h3 style="font-weight: bold; color: gray;">Hemos enviado un correo de confirmación. Revisa tu bandeja. Si no lo encuentras, revisa tu correo no deseado. Estaremos en contacto pronto.</h3>
+
+                      <h3 style="font-weight: bold; color: gray;">Ya puedes cerrar está página o recargar para ver nuevamente la información.</h3>
+                      
+
+
+
+                      <!-- <button type="button" id="downloadQR">Descargar QR</button> -->
+                      <button type="button" onclick="descargarPDF()" style="color: #fff;">Descargar como PDF</button>
+                      </div>
+
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color:#fff; background-color: rgb(189, 187, 187);">Cancelar</button>
-                    <button type="submit" class="btn btn-primary" style="color:#fff">Registrarme ahora</button>
+                    <button id="volveralFormulario" type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color:#fff; background-color: rgb(189, 187, 187);">Volver al formualrio</button>
+                    <button id="registrarmeAhoraFinal" type="submit" class="btn btn-primary" style="color:#fff">Registrarme ahora</button>
                   </div>
                 </div>
               </div>
@@ -849,6 +868,9 @@
       const idClienteoProv = document.getElementById("idClienteoProv");
       idClienteoProv.value = generarIdUnica();
 
+      const volveralFormulario = document.getElementById("volveralFormulario");
+      const registrarmeAhoraFinal = document.getElementById("registrarmeAhoraFinal");
+
   
       // Aquí enviarías el formulario a Formspree (esto es opcional, puedes usar AJAX si lo prefieres)
       const formData = new FormData(this);
@@ -863,8 +885,12 @@
         if (response.ok) {
           // Datos para el QR: puedes incluir un ID único de registro o el nombre del usuario, por ejemplo
           const qrData = idClienteoProv.value;
+
+          volveralFormulario.disabled = true;
+          registrarmeAhoraFinal.disabled = true;
           
           // Generar el QR
+          document.getElementById("qrContainerBefore").style.display = 'none';
           document.getElementById('qrContainer').style.display = 'block';
           const qrCode = new QRCode(document.getElementById('qrcode'), {
             text: qrData,
