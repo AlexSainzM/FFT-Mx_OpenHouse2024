@@ -182,11 +182,11 @@
               </div>
 
               <div class="col-6 col-md-2 offset-md-4 mx-auto">
-                <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" value="Cliente" checked>
                 <label class="btn" for="option5" style="font-size: larger; font-weight: bold;">Cliente</label>
               </div>
               <div class="col-6 col-md-2 offset-md-1 mx-auto">
-                <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off" style="">
+                <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off" value="Proveedor">
                 <label class="btn" for="option6" style="font-weight: bold; font-size: larger;">Proveedor</label>
               </div>
 
@@ -756,7 +756,7 @@
             </div>
 
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="vehiculoParticular" name="vehiculoParticular">
+              <input type="checkbox" class="form-check-input" id="terminosyCondiciones" name="terminosyCondiciones">
               <label class="form-check-label" for="vehiculoParticular">He leido y acepto los <a href="" target="_blank" rel="noopener noreferrer">Terminos y condiciones.</a></label>
             </div>
 
@@ -772,13 +772,13 @@
 
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog" id="contenido">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmación del Registro</h1>
                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body" id="contenidoPDFRegistro">
                       <!-- Contenedor para mostrar el código QR -->
                       <div id="qrContainer" style="display:none;">
                       <h3>Tu código QR de registro:</h3>
@@ -874,7 +874,7 @@
 
   <script>
     function descargarPDF() {
-      var elemento = document.getElementById('contenido');
+      var elemento = document.getElementById('contenidoPDFRegistro');
       html2pdf()
         .from(elemento)
         .save();
